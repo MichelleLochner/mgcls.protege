@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<style>
+      
+      h1 {
+         margin: 1em 0 0.5em 0;
+         font-weight: 600;
+         font-family: 'Helvetica', sans-serif;
+         position: relative;  
+         font-size: 36px;
+         line-height: 40px;
+         padding: 15px 15px 15px 5%;
+         color: #0e8bdf;
+         text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+         box-shadow: 
+            inset 0 0 0 1px rgba(53,86,129, 0.4), 
+            inset 0 0 5px rgba(53,86,129, 0.5),
+            inset -285px 0 35px white;
+         border-radius: 0 10px 0 10px;
+      }
+      
+      h3 {
+         margin: 1em 0 0.5em 0;
+         font-weight: 300;
+         font-family: 'Helvetica', sans-serif;
+         position: relative;
+
+         font-size: 18px;
+         line-height: 30px;
+         color: #000000;
+         !border-bottom: 1px solid rgba(53,86,129, 0.3);
+      }
+
+      /* pagination position styling */
+      .pagination_section {
+            position: relative;
+        }
+         
+        /* pagination styling */
+        .pagination_section a {
+            color: black;
+            padding: 10px 18px;
+            text-decoration: none;
+        }
+         
+        /* pagination hover effect on non-active */
+        .pagination_section a:hover:not(.active) {
+            background-color: #031F3B;
+            color: white;
+        }
+         
+        /* pagination hover effect on active*/
+         
+        a:nth-child(***currentpage***) {
+            background-color: #0e8bdf;
+            color: white;
+        }
+         
+        a:nth-child(1) {
+            font-weight: bold;
+        }
+         
+        a:nth-child(***lastpage***) {
+            font-weight: bold;
+        }
+         
+
+	body {
+         margin: 0em 1em 0.5em 1em;
+         font-weight: 300;
+         font-family: 'Helvetica', sans-serif;
+         position: relative;
+
+         font-size: 16px;
+         line-height: 20px;
+         color: #000000;
+         !border-bottom: 1px solid rgba(53,86,129, 0.3);
+      }
+
+      
+      .column{
+         float: left;
+         width: 20%;
+         padding: 0px;
+      }
+      
+      .column2{
+         float: left;
+         width: 48%;
+         padding: 0px;
+      }
+      
+      .row::after{
+         content: "";
+         clear: both;
+         display: table;
+      }
+      
+   </style>
+
+<head>
+   <title>Astronomaly:Protege applied to MGCLS</title>
+   <h1>Astronomaly:Protege applied to MGCLS</h1>
+   
+   <h3><a href="https://github.com/MichelleLochner/astronomaly">Astronomaly<a/> is a machine learning framework for anomaly detection with active learning. In Lochner & Rudnick (2024), we introduced a new method called Protege, which acts as a recommendation engine for finding interesting sources. What follows is the entire MGCLS dataset from the paper, 6161 sources, ordered from most to least interesting, according to Protege. Please use the page 
+    numbers to navigate between sets of sources. Each cutout is resized to the 
+    smallest bounding box around the source, with a bar in the bottom left indicating the beam size (roughly 7.6 arcseconds). The sources are rescaled
+    using asinh and truncated at 90% maximum flux. The original MGCLS image and coordinates of the source in degrees are listed. The score from author ML, from 1 to 5, is indicated, with -1 meaning this source was never given a score. Sources from the evaluation subset are indicated.
+   </h3>
+   <br>
+   
+   
+</head>
+
+<body>

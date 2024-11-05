@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html>
+<style>
+      
+      h1 {
+         margin: 1em 0 0.5em 0;
+         font-weight: 600;
+         font-family: 'Helvetica', sans-serif;
+         position: relative;  
+         font-size: 36px;
+         line-height: 40px;
+         padding: 15px 15px 15px 5%;
+         color: #0e8bdf;
+         text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+         box-shadow: 
+            inset 0 0 0 1px rgba(53,86,129, 0.4), 
+            inset 0 0 5px rgba(53,86,129, 0.5),
+            inset -285px 0 35px white;
+         border-radius: 0 10px 0 10px;
+      }
+      
+      h3 {
+         margin: 1em 0 0.5em 0;
+         font-weight: 300;
+         font-family: 'Helvetica', sans-serif;
+         position: relative;
+
+         font-size: 18px;
+         line-height: 30px;
+         color: #000000;
+         !border-bottom: 1px solid rgba(53,86,129, 0.3);
+      }
+
+      /* pagination position styling */
+      .pagination_section {
+            position: relative;
+        }
+         
+        /* pagination styling */
+        .pagination_section a {
+            color: black;
+            padding: 10px 18px;
+            text-decoration: none;
+        }
+         
+        /* pagination hover effect on non-active */
+        .pagination_section a:hover:not(.active) {
+            background-color: #031F3B;
+            color: white;
+        }
+         
+        /* pagination hover effect on active*/
+         
+        a:nth-child(13) {
+            background-color: #0e8bdf;
+            color: white;
+        }
+         
+        a:nth-child(1) {
+            font-weight: bold;
+        }
+         
+        a:nth-child(15) {
+            font-weight: bold;
+        }
+         
+
+	body {
+         margin: 0em 1em 0.5em 1em;
+         font-weight: 300;
+         font-family: 'Helvetica', sans-serif;
+         position: relative;
+
+         font-size: 16px;
+         line-height: 20px;
+         color: #000000;
+         !border-bottom: 1px solid rgba(53,86,129, 0.3);
+      }
+
+      
+      .column{
+         float: left;
+         width: 20%;
+         padding: 0px;
+      }
+      
+      .column2{
+         float: left;
+         width: 48%;
+         padding: 0px;
+      }
+      
+      .row::after{
+         content: "";
+         clear: both;
+         display: table;
+      }
+      
+   </style>
+
+<head>
+   <title>Astronomaly:Protege applied to MGCLS</title>
+   <h1>Astronomaly:Protege applied to MGCLS</h1>
+   
+   <h3><a href="https://github.com/MichelleLochner/astronomaly">Astronomaly<a/> is a machine learning framework for anomaly detection with active learning. In Lochner & Rudnick (2024), we introduced a new method called Protege, which acts as a recommendation engine for finding interesting sources. What follows is the entire MGCLS dataset from the paper, 6161 sources, ordered from most to least interesting, according to Protege. Please use the page 
+    numbers to navigate between sets of sources. Each cutout is resized to the 
+    smallest bounding box around the source, with a bar in the bottom left indicating the beam size (roughly 7.6 arcseconds). The sources are rescaled
+    using asinh and truncated at 90% maximum flux. The original MGCLS image and coordinates of the source in degrees are listed. The score from author ML, from 1 to 5, is indicated, with -1 meaning this source was never given a score. Sources from the evaluation subset are indicated.
+   </h3>
+   <br>
+   
+   
+</head>
+
+<body>
+<center>
+<div class="pagination_section">
+<a href="page10.html"> << Previous </a> 
+<a href="page1.html" title="Page1">1 </a>
+<a href="page2.html" title="Page2">2 </a>
+<a href="page3.html" title="Page3">3 </a>
+<a href="page4.html" title="Page4">4 </a>
+<a href="page5.html" title="Page5">5 </a>
+<a href="page6.html" title="Page6">6 </a>
+<a href="page7.html" title="Page7">7 </a>
+<a href="page8.html" title="Page8">8 </a>
+<a href="page9.html" title="Page9">9 </a>
+<a href="page10.html" title="Page10">10 </a>
+<a href="page11.html" title="Page11">11 </a>
+<a href="page12.html" title="Page12">12 </a>
+<a href="page12.html"> Next >> </a> 
+</div>
+</center>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5000.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.5825<br>		<p>DEC: -41.6214<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5001.png" width=95%>
+		<p>Image: J0212.8-4707<br>		<p>RA: 32.8080<br>		<p>DEC: -47.2526<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5002.png" width=95%>
+		<p>Image: RXCJ1314<br>		<p>RA: 198.3518<br>		<p>DEC: -25.2305<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5003.png" width=95%>
+		<p>Image: Abell_2813<br>		<p>RA: 10.9419<br>		<p>DEC: -20.4986<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5004.png" width=95%>
+		<p>Image: J0631.3-5610<br>		<p>RA: 97.8274<br>		<p>DEC: -56.4153<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5005.png" width=95%>
+		<p>Image: J0336.3-4037<br>		<p>RA: 54.7203<br>		<p>DEC: -40.4777<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5006.png" width=95%>
+		<p>Image: J2222.2-5235<br>		<p>RA: 334.7792<br>		<p>DEC: -52.4389<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5007.png" width=95%>
+		<p>Image: J2222.2-5235<br>		<p>RA: 334.9343<br>		<p>DEC: -52.9057<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5008.png" width=95%>
+		<p>Image: MACSJ_0025.4-1222B<br>		<p>RA: 5.9960<br>		<p>DEC: -12.8940<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5009.png" width=95%>
+		<p>Image: Abell_2895<br>		<p>RA: 20.1303<br>		<p>DEC: -27.0221<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5010.png" width=95%>
+		<p>Image: J0303.7-7752<br>		<p>RA: 47.1103<br>		<p>DEC: -77.3545<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5011.png" width=95%>
+		<p>Image: J0108.5-4020<br>		<p>RA: 17.4711<br>		<p>DEC: -39.8565<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5012.png" width=95%>
+		<p>Image: J1410.4-4246<br>		<p>RA: 212.9744<br>		<p>DEC: -42.8798<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5013.png" width=95%>
+		<p>Image: RXCJ1314<br>		<p>RA: 199.2388<br>		<p>DEC: -25.3239<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5014.png" width=95%>
+		<p>Image: J0631.3-5610<br>		<p>RA: 98.6163<br>		<p>DEC: -56.7588<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5015.png" width=95%>
+		<p>Image: J1358.9-4750<br>		<p>RA: 210.4587<br>		<p>DEC: -47.2782<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5016.png" width=95%>
+		<p>Image: Abell_168<br>		<p>RA: 18.8679<br>		<p>DEC: 0.6719<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5017.png" width=95%>
+		<p>Image: Abell_4038<br>		<p>RA: 357.1294<br>		<p>DEC: -28.3802<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5018.png" width=95%>
+		<p>Image: J1705.1-8210<br>		<p>RA: 256.6468<br>		<p>DEC: -82.0439<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5019.png" width=95%>
+		<p>Image: J0108.5-4020<br>		<p>RA: 17.9144<br>		<p>DEC: -40.5803<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5020.png" width=95%>
+		<p>Image: J1130.0-4213<br>		<p>RA: 172.8796<br>		<p>DEC: -41.8808<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5021.png" width=95%>
+		<p>Image: J0145.2-6033<br>		<p>RA: 27.4635<br>		<p>DEC: -60.9461<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5022.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 3.5898<br>		<p>DEC: -66.4266<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5023.png" width=95%>
+		<p>Image: J0712.0-6030<br>		<p>RA: 107.2499<br>		<p>DEC: -60.3171<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5024.png" width=95%>
+		<p>Image: J0027.3-5015<br>		<p>RA: 7.3810<br>		<p>DEC: -49.9204<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5025.png" width=95%>
+		<p>Image: J2023.4-5535<br>		<p>RA: 305.4002<br>		<p>DEC: -55.8845<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5026.png" width=95%>
+		<p>Image: J1705.1-8210<br>		<p>RA: 252.2320<br>		<p>DEC: -82.2940<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5027.png" width=95%>
+		<p>Image: J1840.6-7709<br>		<p>RA: 282.7470<br>		<p>DEC: -77.4342<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5028.png" width=95%>
+		<p>Image: RXCJ1314<br>		<p>RA: 198.8275<br>		<p>DEC: -25.0016<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5029.png" width=95%>
+		<p>Image: J2222.2-5235<br>		<p>RA: 334.6208<br>		<p>DEC: -53.1201<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5030.png" width=95%>
+		<p>Image: J0745.1-5404<br>		<p>RA: 116.9477<br>		<p>DEC: -53.7969<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5031.png" width=95%>
+		<p>Image: J0314.3-4525<br>		<p>RA: 48.2663<br>		<p>DEC: -45.2769<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5032.png" width=95%>
+		<p>Image: Abell_2667<br>		<p>RA: 357.6814<br>		<p>DEC: -26.4772<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5033.png" width=95%>
+		<p>Image: J0638.7-5358<br>		<p>RA: 99.7371<br>		<p>DEC: -53.9625<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5034.png" width=95%>
+		<p>Image: J1601.7-7544<br>		<p>RA: 242.7815<br>		<p>DEC: -76.0531<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5035.png" width=95%>
+		<p>Image: Abell_3365A<br>		<p>RA: 86.7367<br>		<p>DEC: -22.0828<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5036.png" width=95%>
+		<p>Image: J1201.0-4623<br>		<p>RA: 179.6809<br>		<p>DEC: -46.4359<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5037.png" width=95%>
+		<p>Image: J1645.4-7334<br>		<p>RA: 252.8817<br>		<p>DEC: -73.2229<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5038.png" width=95%>
+		<p>Image: RXCJ2351.0-19<br>		<p>RA: 358.2795<br>		<p>DEC: -19.6669<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5039.png" width=95%>
+		<p>Image: J0745.1-5404<br>		<p>RA: 116.3830<br>		<p>DEC: -54.1500<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5040.png" width=95%>
+		<p>Image: J0406.7-7116<br>		<p>RA: 63.5092<br>		<p>DEC: -71.2920<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5041.png" width=95%>
+		<p>Image: Abell_S1121<br>		<p>RA: 351.6084<br>		<p>DEC: -41.6709<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5042.png" width=95%>
+		<p>Image: J2340.1-8510<br>		<p>RA: 350.5126<br>		<p>DEC: -85.7073<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5043.png" width=95%>
+		<p>Image: J2319.2-6750<br>		<p>RA: 348.7718<br>		<p>DEC: -67.4216<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5044.png" width=95%>
+		<p>Image: J0638.7-5358<br>		<p>RA: 100.0246<br>		<p>DEC: -54.0989<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5045.png" width=95%>
+		<p>Image: J2340.1-8510<br>		<p>RA: 351.7761<br>		<p>DEC: -85.2490<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5046.png" width=95%>
+		<p>Image: J0351.1-8212<br>		<p>RA: 55.6832<br>		<p>DEC: -82.1517<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5047.png" width=95%>
+		<p>Image: Abell_2645<br>		<p>RA: 355.1664<br>		<p>DEC: -9.1437<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5048.png" width=95%>
+		<p>Image: J0738.1-7506<br>		<p>RA: 113.8590<br>		<p>DEC: -75.5812<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5049.png" width=95%>
+		<p>Image: J2104.9-8243<br>		<p>RA: 316.8747<br>		<p>DEC: -82.2152<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5050.png" width=95%>
+		<p>Image: J0616.8-4748<br>		<p>RA: 93.9820<br>		<p>DEC: -48.3646<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5051.png" width=95%>
+		<p>Image: J2023.4-5535<br>		<p>RA: 306.1491<br>		<p>DEC: -55.0826<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5052.png" width=95%>
+		<p>Image: J0416.7-5525<br>		<p>RA: 63.9991<br>		<p>DEC: -55.5308<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5053.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 82.4342<br>		<p>DEC: -39.0732<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5054.png" width=95%>
+		<p>Image: J2023.4-5535<br>		<p>RA: 305.9113<br>		<p>DEC: -55.7416<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5055.png" width=95%>
+		<p>Image: J0510.2-4519<br>		<p>RA: 78.0372<br>		<p>DEC: -45.4867<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5056.png" width=95%>
+		<p>Image: J0108.5-4020<br>		<p>RA: 16.7019<br>		<p>DEC: -40.6889<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5057.png" width=95%>
+		<p>Image: J0051.1-4833<br>		<p>RA: 13.0733<br>		<p>DEC: -48.5012<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5058.png" width=95%>
+		<p>Image: J0616.8-4748<br>		<p>RA: 94.4997<br>		<p>DEC: -47.2293<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5059.png" width=95%>
+		<p>Image: Abell_545<br>		<p>RA: 82.9373<br>		<p>DEC: -11.8466<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5060.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.0095<br>		<p>DEC: -42.0858<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5061.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 2.7759<br>		<p>DEC: -65.9954<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5062.png" width=95%>
+		<p>Image: J0145.2-6033<br>		<p>RA: 27.4601<br>		<p>DEC: -60.1381<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5063.png" width=95%>
+		<p>Image: J0812.5-5714<br>		<p>RA: 123.4928<br>		<p>DEC: -56.7655<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5064.png" width=95%>
+		<p>Image: RXCJ0510.7-0801<br>		<p>RA: 77.7024<br>		<p>DEC: -8.1406<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5065.png" width=95%>
+		<p>Image: J0637.3-4828<br>		<p>RA: 98.6766<br>		<p>DEC: -48.2074<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5066.png" width=95%>
+		<p>Image: Abell_133<br>		<p>RA: 15.6737<br>		<p>DEC: -21.7782<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5067.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 3.2003<br>		<p>DEC: -65.8029<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5068.png" width=95%>
+		<p>Image: J0610.5-4848<br>		<p>RA: 93.2289<br>		<p>DEC: -48.9253<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5069.png" width=95%>
+		<p>Image: RXCJ0225.1-22928<br>		<p>RA: 36.2876<br>		<p>DEC: -29.8932<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5070.png" width=95%>
+		<p>Image: J0757.7-5315<br>		<p>RA: 120.0637<br>		<p>DEC: -53.8294<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5071.png" width=95%>
+		<p>Image: RXC_J0520.7-1328<br>		<p>RA: 80.2023<br>		<p>DEC: -13.1779<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5072.png" width=95%>
+		<p>Image: Abell_13<br>		<p>RA: 3.6743<br>		<p>DEC: -19.7121<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5073.png" width=95%>
+		<p>Image: J0336.3-4037<br>		<p>RA: 54.2082<br>		<p>DEC: -40.2779<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5074.png" width=95%>
+		<p>Image: Abell_22<br>		<p>RA: 4.7241<br>		<p>DEC: -25.1384<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5075.png" width=95%>
+		<p>Image: J0232.2-4420<br>		<p>RA: 38.6159<br>		<p>DEC: -44.1699<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5076.png" width=95%>
+		<p>Image: J0416.7-5525<br>		<p>RA: 64.7744<br>		<p>DEC: -55.6376<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5077.png" width=95%>
+		<p>Image: J0117.8-5455<br>		<p>RA: 20.4416<br>		<p>DEC: -54.7466<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5078.png" width=95%>
+		<p>Image: J1145.6-5420<br>		<p>RA: 176.0964<br>		<p>DEC: -54.4293<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5079.png" width=95%>
+		<p>Image: J0543.4-4430<br>		<p>RA: 85.0973<br>		<p>DEC: -44.8970<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5080.png" width=95%>
+		<p>Image: J2104.9-8243<br>		<p>RA: 311.9643<br>		<p>DEC: -83.1236<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5081.png" width=95%>
+		<p>Image: J0638.7-5358<br>		<p>RA: 99.9075<br>		<p>DEC: -54.3505<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5082.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 3.2895<br>		<p>DEC: -66.0388<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5083.png" width=95%>
+		<p>Image: Abell_194<br>		<p>RA: 21.9244<br>		<p>DEC: -1.5759<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5084.png" width=95%>
+		<p>Image: J0217.2-5244<br>		<p>RA: 35.0801<br>		<p>DEC: -52.7152<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5085.png" width=95%>
+		<p>Image: J1423.7-5412<br>		<p>RA: 216.1884<br>		<p>DEC: -54.1189<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5086.png" width=95%>
+		<p>Image: Abell_3562<br>		<p>RA: 202.5386<br>		<p>DEC: -31.2723<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5087.png" width=95%>
+		<p>Image: J0738.1-7506<br>		<p>RA: 115.6969<br>		<p>DEC: -74.9718<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5088.png" width=95%>
+		<p>Image: J0212.8-4707<br>		<p>RA: 33.9074<br>		<p>DEC: -47.2191<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5089.png" width=95%>
+		<p>Image: J0616.8-4748<br>		<p>RA: 94.3578<br>		<p>DEC: -47.6286<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5090.png" width=95%>
+		<p>Image: J0757.7-5315<br>		<p>RA: 120.4306<br>		<p>DEC: -53.4479<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5091.png" width=95%>
+		<p>Image: J0212.8-4707<br>		<p>RA: 33.4306<br>		<p>DEC: -47.1010<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5092.png" width=95%>
+		<p>Image: J0314.3-4525<br>		<p>RA: 48.0257<br>		<p>DEC: -45.1218<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5093.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.7731<br>		<p>DEC: -41.7027<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5094.png" width=95%>
+		<p>Image: Abell_3562<br>		<p>RA: 202.5210<br>		<p>DEC: -31.7518<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5095.png" width=95%>
+		<p>Image: J1130.0-4213<br>		<p>RA: 173.1449<br>		<p>DEC: -42.0747<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5096.png" width=95%>
+		<p>Image: J0542.8-4100<br>		<p>RA: 86.1598<br>		<p>DEC: -40.9154<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5097.png" width=95%>
+		<p>Image: J0352.4-7401<br>		<p>RA: 56.6650<br>		<p>DEC: -73.6598<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5098.png" width=95%>
+		<p>Image: J0948.6-8327<br>		<p>RA: 143.8004<br>		<p>DEC: -83.6556<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5099.png" width=95%>
+		<p>Image: J0542.8-4100<br>		<p>RA: 85.2674<br>		<p>DEC: -41.1856<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5100.png" width=95%>
+		<p>Image: PLCK_G200.9-28.2<br>		<p>RA: 72.5909<br>		<p>DEC: -2.5886<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5101.png" width=95%>
+		<p>Image: RXCJ0510.7-0801<br>		<p>RA: 77.2828<br>		<p>DEC: -7.8521<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5102.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 37.2158<br>		<p>DEC: -42.4668<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5103.png" width=95%>
+		<p>Image: Abell_13<br>		<p>RA: 3.7583<br>		<p>DEC: -19.2093<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5104.png" width=95%>
+		<p>Image: Abell_3667<br>		<p>RA: 303.8256<br>		<p>DEC: -56.5776<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5105.png" width=95%>
+		<p>Image: Abell_3562<br>		<p>RA: 202.1296<br>		<p>DEC: -31.5843<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5106.png" width=95%>
+		<p>Image: J1145.6-5420<br>		<p>RA: 176.7284<br>		<p>DEC: -54.2739<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5107.png" width=95%>
+		<p>Image: J1535.1-4658<br>		<p>RA: 234.5486<br>		<p>DEC: -46.5094<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5108.png" width=95%>
+		<p>Image: J1358.9-4750<br>		<p>RA: 209.1745<br>		<p>DEC: -47.7805<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5109.png" width=95%>
+		<p>Image: RXCJ0510.7-0801<br>		<p>RA: 77.6646<br>		<p>DEC: -8.6084<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5110.png" width=95%>
+		<p>Image: Abell_22<br>		<p>RA: 5.3866<br>		<p>DEC: -25.8471<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5111.png" width=95%>
+		<p>Image: J1358.9-4750<br>		<p>RA: 209.7621<br>		<p>DEC: -47.7502<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5112.png" width=95%>
+		<p>Image: Abell_521<br>		<p>RA: 73.5661<br>		<p>DEC: -10.2680<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5113.png" width=95%>
+		<p>Image: J0637.3-4828<br>		<p>RA: 98.6667<br>		<p>DEC: -48.5231<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5114.png" width=95%>
+		<p>Image: J0516.6-5430<br>		<p>RA: 79.4937<br>		<p>DEC: -54.4134<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5115.png" width=95%>
+		<p>Image: J0645.4-5413<br>		<p>RA: 100.5170<br>		<p>DEC: -54.6553<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5116.png" width=95%>
+		<p>Image: J0637.3-4828<br>		<p>RA: 99.3121<br>		<p>DEC: -48.9546<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5117.png" width=95%>
+		<p>Image: J1145.6-5420<br>		<p>RA: 176.3015<br>		<p>DEC: -54.5662<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5118.png" width=95%>
+		<p>Image: MACS_J0257.6-2209<br>		<p>RA: 44.6719<br>		<p>DEC: -21.8092<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5119.png" width=95%>
+		<p>Image: J0145.0-5300<br>		<p>RA: 25.3470<br>		<p>DEC: -53.0605<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5120.png" width=95%>
+		<p>Image: J2023.4-5535<br>		<p>RA: 304.8197<br>		<p>DEC: -56.1318<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5121.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 35.8841<br>		<p>DEC: -42.0038<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5122.png" width=95%>
+		<p>Image: J0117.8-5455<br>		<p>RA: 18.8908<br>		<p>DEC: -54.4917<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5123.png" width=95%>
+		<p>Image: J0516.6-5430<br>		<p>RA: 78.9099<br>		<p>DEC: -54.4794<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5124.png" width=95%>
+		<p>Image: J0027.3-5015<br>		<p>RA: 7.4449<br>		<p>DEC: -50.8084<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5125.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 82.5345<br>		<p>DEC: -39.5553<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5126.png" width=95%>
+		<p>Image: J0108.5-4020<br>		<p>RA: 16.6652<br>		<p>DEC: -40.6695<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5127.png" width=95%>
+		<p>Image: J0314.3-4525<br>		<p>RA: 48.9392<br>		<p>DEC: -45.5642<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5128.png" width=95%>
+		<p>Image: Abell_2744<br>		<p>RA: 3.8600<br>		<p>DEC: -30.6751<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5129.png" width=95%>
+		<p>Image: J1040.7-7047<br>		<p>RA: 160.1729<br>		<p>DEC: -70.2249<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5130.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 81.8789<br>		<p>DEC: -39.4010<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5131.png" width=95%>
+		<p>Image: J0117.8-5455<br>		<p>RA: 19.7885<br>		<p>DEC: -54.6548<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5132.png" width=95%>
+		<p>Image: J2104.9-8243<br>		<p>RA: 316.7832<br>		<p>DEC: -82.3010<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5133.png" width=95%>
+		<p>Image: PLCK_G200.9-28.2<br>		<p>RA: 72.9068<br>		<p>DEC: -3.1711<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5134.png" width=95%>
+		<p>Image: RXCJ1314<br>		<p>RA: 198.9705<br>		<p>DEC: -25.5458<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5135.png" width=95%>
+		<p>Image: Abell_3562<br>		<p>RA: 202.6759<br>		<p>DEC: -31.6902<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5136.png" width=95%>
+		<p>Image: J0540.1-4050<br>		<p>RA: 84.4188<br>		<p>DEC: -41.3239<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5137.png" width=95%>
+		<p>Image: J1040.7-7047<br>		<p>RA: 160.4899<br>		<p>DEC: -71.2028<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5138.png" width=95%>
+		<p>Image: RXCJ2351.0-19<br>		<p>RA: 357.8233<br>		<p>DEC: -19.6392<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5139.png" width=95%>
+		<p>Image: J2319.2-6750<br>		<p>RA: 348.2445<br>		<p>DEC: -67.8528<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5140.png" width=95%>
+		<p>Image: Abell_521<br>		<p>RA: 73.3618<br>		<p>DEC: -10.2401<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5141.png" width=95%>
+		<p>Image: J0543.4-4430<br>		<p>RA: 85.4078<br>		<p>DEC: -44.2010<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5142.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 105.2852<br>		<p>DEC: -55.7783<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5143.png" width=95%>
+		<p>Image: J0645.4-5413<br>		<p>RA: 101.4463<br>		<p>DEC: -54.2506<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5144.png" width=95%>
+		<p>Image: MACSJ_0025.4-1222B<br>		<p>RA: 6.4452<br>		<p>DEC: -12.7899<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5145.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 82.1866<br>		<p>DEC: -39.4576<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5146.png" width=95%>
+		<p>Image: J1358.9-4750<br>		<p>RA: 209.4747<br>		<p>DEC: -47.6320<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5147.png" width=95%>
+		<p>Image: J1145.6-5420<br>		<p>RA: 177.2581<br>		<p>DEC: -54.5252<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5148.png" width=95%>
+		<p>Image: J0510.2-4519<br>		<p>RA: 77.4173<br>		<p>DEC: -44.8273<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5149.png" width=95%>
+		<p>Image: Abell_168<br>		<p>RA: 18.6234<br>		<p>DEC: -0.0041<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5150.png" width=95%>
+		<p>Image: Abell_548<br>		<p>RA: 87.3509<br>		<p>DEC: -25.0248<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5151.png" width=95%>
+		<p>Image: J0217.2-5244<br>		<p>RA: 34.3085<br>		<p>DEC: -52.7586<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5152.png" width=95%>
+		<p>Image: J0351.1-8212<br>		<p>RA: 60.4611<br>		<p>DEC: -82.3844<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5153.png" width=95%>
+		<p>Image: J1423.7-5412<br>		<p>RA: 215.2216<br>		<p>DEC: -54.3536<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5154.png" width=95%>
+		<p>Image: MACSJ_0025.4-1222B<br>		<p>RA: 5.7938<br>		<p>DEC: -12.7543<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5155.png" width=95%>
+		<p>Image: J0525.8-4715<br>		<p>RA: 80.9527<br>		<p>DEC: -47.3962<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5156.png" width=95%>
+		<p>Image: J0027.3-5015<br>		<p>RA: 6.2109<br>		<p>DEC: -50.4369<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5157.png" width=95%>
+		<p>Image: MACSJ_0025.4-1222B<br>		<p>RA: 6.1795<br>		<p>DEC: -12.0991<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5158.png" width=95%>
+		<p>Image: Abell_S1063<br>		<p>RA: 341.3986<br>		<p>DEC: -44.5810<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5159.png" width=95%>
+		<p>Image: J1705.1-8210<br>		<p>RA: 252.1476<br>		<p>DEC: -82.4893<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5160.png" width=95%>
+		<p>Image: J0738.1-7506<br>		<p>RA: 112.8494<br>		<p>DEC: -74.5942<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5161.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.5942<br>		<p>DEC: -41.9359<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5162.png" width=95%>
+		<p>Image: J0738.1-7506<br>		<p>RA: 114.4910<br>		<p>DEC: -74.9345<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5163.png" width=95%>
+		<p>Image: J1358.9-4750<br>		<p>RA: 210.1742<br>		<p>DEC: -48.2528<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5164.png" width=95%>
+		<p>Image: J0745.1-5404<br>		<p>RA: 116.1436<br>		<p>DEC: -54.4372<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5165.png" width=95%>
+		<p>Image: J1601.7-7544<br>		<p>RA: 240.5846<br>		<p>DEC: -75.8767<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5166.png" width=95%>
+		<p>Image: J1410.4-4246<br>		<p>RA: 211.9139<br>		<p>DEC: -43.0358<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5167.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 82.7519<br>		<p>DEC: -39.5497<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5168.png" width=95%>
+		<p>Image: Abell_548<br>		<p>RA: 86.4181<br>		<p>DEC: -25.6043<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5169.png" width=95%>
+		<p>Image: Abell_2645<br>		<p>RA: 355.7720<br>		<p>DEC: -8.4642<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5170.png" width=95%>
+		<p>Image: ElGordo<br>		<p>RA: 16.3183<br>		<p>DEC: -49.0449<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5171.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 105.4652<br>		<p>DEC: -55.7495<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5172.png" width=95%>
+		<p>Image: Abell_22<br>		<p>RA: 5.1785<br>		<p>DEC: -25.7107<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5173.png" width=95%>
+		<p>Image: RXCJ0510.7-0801<br>		<p>RA: 77.1045<br>		<p>DEC: -8.3057<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5174.png" width=95%>
+		<p>Image: J0542.8-4100<br>		<p>RA: 86.1639<br>		<p>DEC: -40.9585<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5175.png" width=95%>
+		<p>Image: Abell_194<br>		<p>RA: 21.4114<br>		<p>DEC: -1.1959<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5176.png" width=95%>
+		<p>Image: J0540.1-4322<br>		<p>RA: 84.9455<br>		<p>DEC: -43.5291<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5177.png" width=95%>
+		<p>Image: J0745.1-5404<br>		<p>RA: 115.7120<br>		<p>DEC: -53.8293<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5178.png" width=95%>
+		<p>Image: J1539.5-8335<br>		<p>RA: 231.1490<br>		<p>DEC: -83.9597<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5179.png" width=95%>
+		<p>Image: J1201.0-4623<br>		<p>RA: 180.9101<br>		<p>DEC: -46.7195<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5180.png" width=95%>
+		<p>Image: MACSJ0417.5-1155<br>		<p>RA: 63.8754<br>		<p>DEC: -11.7233<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5181.png" width=95%>
+		<p>Image: J1145.6-5420<br>		<p>RA: 176.1296<br>		<p>DEC: -53.9115<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5182.png" width=95%>
+		<p>Image: Abell_13<br>		<p>RA: 2.8686<br>		<p>DEC: -19.1315<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5183.png" width=95%>
+		<p>Image: J0117.8-5455<br>		<p>RA: 20.2545<br>		<p>DEC: -54.3522<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5184.png" width=95%>
+		<p>Image: MACSJ0417.5-1155<br>		<p>RA: 64.7586<br>		<p>DEC: -11.5777<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5185.png" width=95%>
+		<p>Image: J2222.2-5235<br>		<p>RA: 335.6325<br>		<p>DEC: -52.8059<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5186.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.9723<br>		<p>DEC: -41.5200<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5187.png" width=95%>
+		<p>Image: J0540.1-4050<br>		<p>RA: 84.8299<br>		<p>DEC: -40.8290<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5188.png" width=95%>
+		<p>Image: J0943.4-7619<br>		<p>RA: 143.4874<br>		<p>DEC: -76.2856<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5189.png" width=95%>
+		<p>Image: J0336.3-4037<br>		<p>RA: 53.3551<br>		<p>DEC: -40.7568<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5190.png" width=95%>
+		<p>Image: Abell_545<br>		<p>RA: 83.5389<br>		<p>DEC: -11.2925<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5191.png" width=95%>
+		<p>Image: J0516.6-5430<br>		<p>RA: 79.5578<br>		<p>DEC: -54.5929<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5192.png" width=95%>
+		<p>Image: J0616.8-4748<br>		<p>RA: 93.6256<br>		<p>DEC: -48.2818<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5193.png" width=95%>
+		<p>Image: ElGordo<br>		<p>RA: 16.3017<br>		<p>DEC: -49.1314<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5194.png" width=95%>
+		<p>Image: J2104.9-8243<br>		<p>RA: 314.6179<br>		<p>DEC: -83.0861<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5195.png" width=95%>
+		<p>Image: Abell_13<br>		<p>RA: 2.9592<br>		<p>DEC: -19.9759<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5196.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 3.8560<br>		<p>DEC: -66.3246<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5197.png" width=95%>
+		<p>Image: J1645.4-7334<br>		<p>RA: 252.8294<br>		<p>DEC: -73.5667<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5198.png" width=95%>
+		<p>Image: J0431.4-6126<br>		<p>RA: 68.3658<br>		<p>DEC: -61.4524<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5199.png" width=95%>
+		<p>Image: J0745.1-5404<br>		<p>RA: 116.3921<br>		<p>DEC: -53.5472<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5200.png" width=95%>
+		<p>Image: J1601.7-7544<br>		<p>RA: 239.9311<br>		<p>DEC: -75.5601<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5201.png" width=95%>
+		<p>Image: Abell_S1063<br>		<p>RA: 341.8841<br>		<p>DEC: -45.1172<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5202.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 3.7622<br>		<p>DEC: -65.8377<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5203.png" width=95%>
+		<p>Image: J1535.1-4658<br>		<p>RA: 233.6153<br>		<p>DEC: -47.0734<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5204.png" width=95%>
+		<p>Image: J0342.8-5338<br>		<p>RA: 55.7346<br>		<p>DEC: -53.7238<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5205.png" width=95%>
+		<p>Image: J0449.9-4440<br>		<p>RA: 72.2083<br>		<p>DEC: -44.1714<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5206.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.4988<br>		<p>DEC: -42.0341<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5207.png" width=95%>
+		<p>Image: Abell_2744<br>		<p>RA: 4.1780<br>		<p>DEC: -30.3843<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5208.png" width=95%>
+		<p>Image: J0631.3-5610<br>		<p>RA: 98.4248<br>		<p>DEC: -55.5987<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5209.png" width=95%>
+		<p>Image: J0516.6-5430<br>		<p>RA: 79.5969<br>		<p>DEC: -54.8918<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5210.png" width=95%>
+		<p>Image: J0145.2-6033<br>		<p>RA: 26.6805<br>		<p>DEC: -60.4257<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5211.png" width=95%>
+		<p>Image: Abell_3558<br>		<p>RA: 202.0685<br>		<p>DEC: -31.8044<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5212.png" width=95%>
+		<p>Image: MACSJ_0025.4-1222B<br>		<p>RA: 6.5076<br>		<p>DEC: -12.4848<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5213.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 2.6460<br>		<p>DEC: -65.5103<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5214.png" width=95%>
+		<p>Image: Abell_168<br>		<p>RA: 18.3607<br>		<p>DEC: 0.8379<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5215.png" width=95%>
+		<p>Image: Abell_22<br>		<p>RA: 5.0469<br>		<p>DEC: -25.5297<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5216.png" width=95%>
+		<p>Image: MACSJ_0025.4-1222B<br>		<p>RA: 6.4918<br>		<p>DEC: -12.8899<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5217.png" width=95%>
+		<p>Image: J1423.7-5412<br>		<p>RA: 216.2523<br>		<p>DEC: -54.6043<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5218.png" width=95%>
+		<p>Image: J1423.7-5412<br>		<p>RA: 215.0112<br>		<p>DEC: -54.0485<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5219.png" width=95%>
+		<p>Image: Abell_548<br>		<p>RA: 86.1635<br>		<p>DEC: -25.5503<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5220.png" width=95%>
+		<p>Image: MACSJ0417.5-1155<br>		<p>RA: 64.4489<br>		<p>DEC: -11.4421<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5221.png" width=95%>
+		<p>Image: J0616.8-4748<br>		<p>RA: 94.0122<br>		<p>DEC: -47.4989<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5222.png" width=95%>
+		<p>Image: J2222.2-5235<br>		<p>RA: 335.8535<br>		<p>DEC: -52.1660<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5223.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 81.9758<br>		<p>DEC: -38.9495<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5224.png" width=95%>
+		<p>Image: Abell_S1063<br>		<p>RA: 342.4991<br>		<p>DEC: -44.2536<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5225.png" width=95%>
+		<p>Image: Abell_85<br>		<p>RA: 10.4504<br>		<p>DEC: -8.7713<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5226.png" width=95%>
+		<p>Image: J0812.5-5714<br>		<p>RA: 122.9646<br>		<p>DEC: -57.2608<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5227.png" width=95%>
+		<p>Image: J0600.8-5835<br>		<p>RA: 89.3840<br>		<p>DEC: -58.4587<br>		<p>Author ML score (if available): 3<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5228.png" width=95%>
+		<p>Image: J0108.5-4020<br>		<p>RA: 17.4693<br>		<p>DEC: -40.7643<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5229.png" width=95%>
+		<p>Image: J2222.2-5235<br>		<p>RA: 335.5807<br>		<p>DEC: -51.9978<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5230.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.9755<br>		<p>DEC: -41.9823<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5231.png" width=95%>
+		<p>Image: J0638.7-5358<br>		<p>RA: 99.0153<br>		<p>DEC: -53.7797<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5232.png" width=95%>
+		<p>Image: J1201.0-4623<br>		<p>RA: 179.5096<br>		<p>DEC: -45.9121<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5233.png" width=95%>
+		<p>Image: Abell_13<br>		<p>RA: 3.2605<br>		<p>DEC: -19.2753<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5234.png" width=95%>
+		<p>Image: J0317.9-4414<br>		<p>RA: 50.0386<br>		<p>DEC: -44.4335<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5235.png" width=95%>
+		<p>Image: J0738.1-7506<br>		<p>RA: 113.7812<br>		<p>DEC: -75.1486<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5236.png" width=95%>
+		<p>Image: J1539.5-8335<br>		<p>RA: 233.2446<br>		<p>DEC: -83.3752<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5237.png" width=95%>
+		<p>Image: J0117.8-5455<br>		<p>RA: 19.7555<br>		<p>DEC: -54.6174<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5238.png" width=95%>
+		<p>Image: J2104.9-8243<br>		<p>RA: 311.8495<br>		<p>DEC: -83.1872<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5239.png" width=95%>
+		<p>Image: J0631.3-5610<br>		<p>RA: 98.5540<br>		<p>DEC: -56.4539<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5240.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.6758<br>		<p>DEC: -41.3164<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5241.png" width=95%>
+		<p>Image: J0610.5-4848<br>		<p>RA: 92.0977<br>		<p>DEC: -48.2409<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5242.png" width=95%>
+		<p>Image: Abell_2895<br>		<p>RA: 19.6042<br>		<p>DEC: -26.8260<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5243.png" width=95%>
+		<p>Image: J0212.8-4707<br>		<p>RA: 33.2918<br>		<p>DEC: -47.6590<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5244.png" width=95%>
+		<p>Image: RXCJ2351.0-19<br>		<p>RA: 358.1452<br>		<p>DEC: -19.7800<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5245.png" width=95%>
+		<p>Image: J1539.5-8335<br>		<p>RA: 229.7759<br>		<p>DEC: -83.5922<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5246.png" width=95%>
+		<p>Image: J0217.2-5244<br>		<p>RA: 35.2592<br>		<p>DEC: -52.6107<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5247.png" width=95%>
+		<p>Image: J0328.6-5542<br>		<p>RA: 51.1846<br>		<p>DEC: -55.9799<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5248.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 103.6913<br>		<p>DEC: -56.4423<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5249.png" width=95%>
+		<p>Image: J0600.8-5835<br>		<p>RA: 90.8324<br>		<p>DEC: -58.9866<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5250.png" width=95%>
+		<p>Image: J1518.3-4632<br>		<p>RA: 229.8392<br>		<p>DEC: -46.9006<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5251.png" width=95%>
+		<p>Image: J0232.2-4420<br>		<p>RA: 38.1348<br>		<p>DEC: -43.9419<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5252.png" width=95%>
+		<p>Image: Abell_3376<br>		<p>RA: 90.7154<br>		<p>DEC: -40.3148<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5253.png" width=95%>
+		<p>Image: Abell_2813<br>		<p>RA: 11.0404<br>		<p>DEC: -20.5200<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5254.png" width=95%>
+		<p>Image: J2340.1-8510<br>		<p>RA: 0.5558<br>		<p>DEC: -85.7188<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5255.png" width=95%>
+		<p>Image: RXCJ2351.0-19<br>		<p>RA: 358.3732<br>		<p>DEC: -20.4917<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5256.png" width=95%>
+		<p>Image: J0943.4-7619<br>		<p>RA: 145.6526<br>		<p>DEC: -76.5430<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5257.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 105.3979<br>		<p>DEC: -55.5003<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5258.png" width=95%>
+		<p>Image: J0416.7-5525<br>		<p>RA: 63.2618<br>		<p>DEC: -55.8403<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5259.png" width=95%>
+		<p>Image: RXCJ1314<br>		<p>RA: 198.6523<br>		<p>DEC: -25.0342<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5260.png" width=95%>
+		<p>Image: J1145.6-5420<br>		<p>RA: 176.1667<br>		<p>DEC: -54.2784<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5261.png" width=95%>
+		<p>Image: RXCJ2351.0-19<br>		<p>RA: 357.9726<br>		<p>DEC: -20.1649<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5262.png" width=95%>
+		<p>Image: J0232.2-4420<br>		<p>RA: 37.8234<br>		<p>DEC: -44.1820<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5263.png" width=95%>
+		<p>Image: J1410.4-4246<br>		<p>RA: 212.6781<br>		<p>DEC: -42.2770<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5264.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 81.7270<br>		<p>DEC: -39.4384<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5265.png" width=95%>
+		<p>Image: J0525.8-4715<br>		<p>RA: 80.9206<br>		<p>DEC: -46.9725<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5266.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 105.6706<br>		<p>DEC: -55.8290<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5267.png" width=95%>
+		<p>Image: J0314.3-4525<br>		<p>RA: 48.4029<br>		<p>DEC: -45.4635<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5268.png" width=95%>
+		<p>Image: Abell_3376<br>		<p>RA: 90.1529<br>		<p>DEC: -39.6739<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5269.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.3535<br>		<p>DEC: -42.0161<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5270.png" width=95%>
+		<p>Image: Abell_3562<br>		<p>RA: 203.3667<br>		<p>DEC: -31.0912<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5271.png" width=95%>
+		<p>Image: J1535.1-4658<br>		<p>RA: 233.6744<br>		<p>DEC: -47.2062<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5272.png" width=95%>
+		<p>Image: J1645.4-7334<br>		<p>RA: 253.3068<br>		<p>DEC: -73.5162<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5273.png" width=95%>
+		<p>Image: J0217.2-5244<br>		<p>RA: 34.0066<br>		<p>DEC: -52.9439<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5274.png" width=95%>
+		<p>Image: J2023.4-5535<br>		<p>RA: 304.8263<br>		<p>DEC: -55.5986<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5275.png" width=95%>
+		<p>Image: Abell_S1121<br>		<p>RA: 350.8769<br>		<p>DEC: -41.2644<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5276.png" width=95%>
+		<p>Image: Abell_2811<br>		<p>RA: 10.0953<br>		<p>DEC: -28.9230<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5277.png" width=95%>
+		<p>Image: RXCJ0510.7-0801<br>		<p>RA: 77.3288<br>		<p>DEC: -8.5205<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5278.png" width=95%>
+		<p>Image: J0336.3-4037<br>		<p>RA: 54.3348<br>		<p>DEC: -40.9378<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5279.png" width=95%>
+		<p>Image: J0314.3-4525<br>		<p>RA: 49.2940<br>		<p>DEC: -45.2211<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5280.png" width=95%>
+		<p>Image: J0600.8-5835<br>		<p>RA: 89.2607<br>		<p>DEC: -59.0434<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5281.png" width=95%>
+		<p>Image: J0943.4-7619<br>		<p>RA: 146.3805<br>		<p>DEC: -75.9665<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5282.png" width=95%>
+		<p>Image: Abell_2667<br>		<p>RA: 358.5404<br>		<p>DEC: -26.0925<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5283.png" width=95%>
+		<p>Image: Abell_22<br>		<p>RA: 5.7653<br>		<p>DEC: -26.1785<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5284.png" width=95%>
+		<p>Image: J0638.7-5358<br>		<p>RA: 99.3107<br>		<p>DEC: -53.9079<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5285.png" width=95%>
+		<p>Image: J0745.1-5404<br>		<p>RA: 116.4883<br>		<p>DEC: -53.8467<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5286.png" width=95%>
+		<p>Image: J0545.5-4756<br>		<p>RA: 85.9894<br>		<p>DEC: -47.6582<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5287.png" width=95%>
+		<p>Image: J0638.7-5358<br>		<p>RA: 100.4370<br>		<p>DEC: -53.4168<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5288.png" width=95%>
+		<p>Image: J0328.6-5542<br>		<p>RA: 52.2014<br>		<p>DEC: -55.7902<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5289.png" width=95%>
+		<p>Image: Abell_548<br>		<p>RA: 87.1122<br>		<p>DEC: -25.9524<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5290.png" width=95%>
+		<p>Image: Abell_3376<br>		<p>RA: 90.4750<br>		<p>DEC: -40.0685<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5291.png" width=95%>
+		<p>Image: J0616.8-4748<br>		<p>RA: 94.2241<br>		<p>DEC: -48.1034<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5292.png" width=95%>
+		<p>Image: J0540.1-4322<br>		<p>RA: 85.0317<br>		<p>DEC: -43.5811<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5293.png" width=95%>
+		<p>Image: Abell_22<br>		<p>RA: 5.0710<br>		<p>DEC: -25.4367<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5294.png" width=95%>
+		<p>Image: J0328.6-5542<br>		<p>RA: 51.7637<br>		<p>DEC: -55.7938<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5295.png" width=95%>
+		<p>Image: J0431.4-6126<br>		<p>RA: 67.1631<br>		<p>DEC: -61.1045<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5296.png" width=95%>
+		<p>Image: J1535.1-4658<br>		<p>RA: 234.2154<br>		<p>DEC: -47.0912<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5297.png" width=95%>
+		<p>Image: Abell_2485<br>		<p>RA: 342.7346<br>		<p>DEC: -15.5981<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5298.png" width=95%>
+		<p>Image: J0943.4-7619<br>		<p>RA: 147.8203<br>		<p>DEC: -76.4391<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5299.png" width=95%>
+		<p>Image: J0416.7-5525<br>		<p>RA: 63.2426<br>		<p>DEC: -55.3732<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5300.png" width=95%>
+		<p>Image: J0406.7-7116<br>		<p>RA: 61.2309<br>		<p>DEC: -70.6889<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5301.png" width=95%>
+		<p>Image: J0631.3-5610<br>		<p>RA: 97.5023<br>		<p>DEC: -55.7071<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5302.png" width=95%>
+		<p>Image: J0216.3-4816<br>		<p>RA: 34.0354<br>		<p>DEC: -48.1467<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5303.png" width=95%>
+		<p>Image: J0712.0-6030<br>		<p>RA: 107.1588<br>		<p>DEC: -60.8516<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5304.png" width=95%>
+		<p>Image: J0212.8-4707<br>		<p>RA: 33.1222<br>		<p>DEC: -47.1927<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5305.png" width=95%>
+		<p>Image: J0712.0-6030<br>		<p>RA: 107.4370<br>		<p>DEC: -60.1912<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5306.png" width=95%>
+		<p>Image: J0616.8-4748<br>		<p>RA: 94.2456<br>		<p>DEC: -48.3788<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5307.png" width=95%>
+		<p>Image: J0351.1-8212<br>		<p>RA: 54.3315<br>		<p>DEC: -82.7517<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5308.png" width=95%>
+		<p>Image: J1539.5-8335<br>		<p>RA: 231.1744<br>		<p>DEC: -83.2197<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5309.png" width=95%>
+		<p>Image: MACS_J0257.6-2209<br>		<p>RA: 44.5818<br>		<p>DEC: -22.1065<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5310.png" width=95%>
+		<p>Image: J1705.1-8210<br>		<p>RA: 254.1478<br>		<p>DEC: -82.4787<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5311.png" width=95%>
+		<p>Image: J1145.6-5420<br>		<p>RA: 175.5744<br>		<p>DEC: -54.7944<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5312.png" width=95%>
+		<p>Image: MACS_J0257.6-2209<br>		<p>RA: 44.2026<br>		<p>DEC: -21.7473<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5313.png" width=95%>
+		<p>Image: Abell_S295<br>		<p>RA: 40.5365<br>		<p>DEC: -52.5476<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5314.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 105.2764<br>		<p>DEC: -56.4726<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5315.png" width=95%>
+		<p>Image: J0510.2-4519<br>		<p>RA: 77.7961<br>		<p>DEC: -44.9447<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5316.png" width=95%>
+		<p>Image: J0948.6-8327<br>		<p>RA: 146.5697<br>		<p>DEC: -83.5651<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5317.png" width=95%>
+		<p>Image: J0745.1-5404<br>		<p>RA: 116.3888<br>		<p>DEC: -54.3023<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5318.png" width=95%>
+		<p>Image: J0543.4-4430<br>		<p>RA: 85.1631<br>		<p>DEC: -44.5944<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5319.png" width=95%>
+		<p>Image: J0626.3-5341<br>		<p>RA: 96.5552<br>		<p>DEC: -53.6960<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5320.png" width=95%>
+		<p>Image: J0406.7-7116<br>		<p>RA: 60.4769<br>		<p>DEC: -70.8432<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5321.png" width=95%>
+		<p>Image: J1358.9-4750<br>		<p>RA: 209.9314<br>		<p>DEC: -48.3744<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5322.png" width=95%>
+		<p>Image: J0449.9-4440<br>		<p>RA: 71.8442<br>		<p>DEC: -44.1037<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5323.png" width=95%>
+		<p>Image: Abell_2811<br>		<p>RA: 10.5610<br>		<p>DEC: -28.2940<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5324.png" width=95%>
+		<p>Image: J0510.2-4519<br>		<p>RA: 77.1045<br>		<p>DEC: -45.4209<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5325.png" width=95%>
+		<p>Image: J0948.6-8327<br>		<p>RA: 148.7184<br>		<p>DEC: -84.0451<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5326.png" width=95%>
+		<p>Image: J0051.1-4833<br>		<p>RA: 13.6037<br>		<p>DEC: -48.6971<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5327.png" width=95%>
+		<p>Image: RXCJ1314<br>		<p>RA: 197.9564<br>		<p>DEC: -25.5017<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5328.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 82.2617<br>		<p>DEC: -39.9979<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5329.png" width=95%>
+		<p>Image: J0600.8-5835<br>		<p>RA: 90.3995<br>		<p>DEC: -58.3306<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5330.png" width=95%>
+		<p>Image: J0607.0-4928<br>		<p>RA: 91.7506<br>		<p>DEC: -49.7733<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5331.png" width=95%>
+		<p>Image: Abell_194<br>		<p>RA: 21.4840<br>		<p>DEC: -1.9599<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5332.png" width=95%>
+		<p>Image: J1145.6-5420<br>		<p>RA: 175.6501<br>		<p>DEC: -54.2231<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5333.png" width=95%>
+		<p>Image: MACSJ0417.5-1155<br>		<p>RA: 64.9279<br>		<p>DEC: -12.4039<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5334.png" width=95%>
+		<p>Image: J0117.8-5455<br>		<p>RA: 18.9680<br>		<p>DEC: -54.5550<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5335.png" width=95%>
+		<p>Image: Abell_3667<br>		<p>RA: 303.3395<br>		<p>DEC: -56.2530<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5336.png" width=95%>
+		<p>Image: J0645.4-5413<br>		<p>RA: 100.4527<br>		<p>DEC: -54.4195<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5337.png" width=95%>
+		<p>Image: J0342.8-5338<br>		<p>RA: 55.5197<br>		<p>DEC: -53.7136<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5338.png" width=95%>
+		<p>Image: J0625.2-5521<br>		<p>RA: 97.2425<br>		<p>DEC: -55.6747<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5339.png" width=95%>
+		<p>Image: J0757.7-5315<br>		<p>RA: 118.7118<br>		<p>DEC: -53.6874<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5340.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 104.5585<br>		<p>DEC: -55.9066<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5341.png" width=95%>
+		<p>Image: J0943.4-7619<br>		<p>RA: 147.6925<br>		<p>DEC: -76.6912<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5342.png" width=95%>
+		<p>Image: Abell_S295<br>		<p>RA: 40.8865<br>		<p>DEC: -53.4422<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5343.png" width=95%>
+		<p>Image: Abell_S1121<br>		<p>RA: 351.3621<br>		<p>DEC: -41.3227<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5344.png" width=95%>
+		<p>Image: Abell_3562<br>		<p>RA: 202.5668<br>		<p>DEC: -31.3816<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5345.png" width=95%>
+		<p>Image: J0051.1-4833<br>		<p>RA: 12.2837<br>		<p>DEC: -48.0903<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5346.png" width=95%>
+		<p>Image: J0336.3-4037<br>		<p>RA: 53.6155<br>		<p>DEC: -40.9899<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5347.png" width=95%>
+		<p>Image: J1539.5-8335<br>		<p>RA: 236.2236<br>		<p>DEC: -83.0833<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5348.png" width=95%>
+		<p>Image: J1201.0-4623<br>		<p>RA: 180.0281<br>		<p>DEC: -46.7472<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5349.png" width=95%>
+		<p>Image: J0406.7-7116<br>		<p>RA: 61.6204<br>		<p>DEC: -71.5727<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5350.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 37.1801<br>		<p>DEC: -41.9821<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5351.png" width=95%>
+		<p>Image: J1201.0-4623<br>		<p>RA: 179.5166<br>		<p>DEC: -45.8237<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5352.png" width=95%>
+		<p>Image: J0406.7-7116<br>		<p>RA: 61.0019<br>		<p>DEC: -71.1508<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5353.png" width=95%>
+		<p>Image: J0543.4-4430<br>		<p>RA: 85.0635<br>		<p>DEC: -44.2162<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5354.png" width=95%>
+		<p>Image: Abell_3562<br>		<p>RA: 203.4056<br>		<p>DEC: -31.5125<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5355.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 82.4337<br>		<p>DEC: -38.8841<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5356.png" width=95%>
+		<p>Image: RXCJ1314<br>		<p>RA: 198.7646<br>		<p>DEC: -25.1075<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5357.png" width=95%>
+		<p>Image: J1130.0-4213<br>		<p>RA: 173.0357<br>		<p>DEC: -42.4123<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5358.png" width=95%>
+		<p>Image: J0607.0-4928<br>		<p>RA: 90.8502<br>		<p>DEC: -49.2000<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5359.png" width=95%>
+		<p>Image: J0738.1-7506<br>		<p>RA: 113.2037<br>		<p>DEC: -74.9599<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5360.png" width=95%>
+		<p>Image: Abell_3376<br>		<p>RA: 90.5185<br>		<p>DEC: -39.8072<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5361.png" width=95%>
+		<p>Image: Abell_209<br>		<p>RA: 23.1554<br>		<p>DEC: -13.8656<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5362.png" width=95%>
+		<p>Image: J0738.1-7506<br>		<p>RA: 112.3367<br>		<p>DEC: -75.5656<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5363.png" width=95%>
+		<p>Image: Abell_2485<br>		<p>RA: 341.8364<br>		<p>DEC: -16.6800<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5364.png" width=95%>
+		<p>Image: J0145.0-5300<br>		<p>RA: 26.1651<br>		<p>DEC: -53.5396<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5365.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 4.7003<br>		<p>DEC: -66.3089<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5366.png" width=95%>
+		<p>Image: Abell_S1121<br>		<p>RA: 351.7757<br>		<p>DEC: -40.6360<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5367.png" width=95%>
+		<p>Image: Abell_3365A<br>		<p>RA: 87.0661<br>		<p>DEC: -21.9783<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5368.png" width=95%>
+		<p>Image: J0351.1-8212<br>		<p>RA: 54.5450<br>		<p>DEC: -81.8507<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5369.png" width=95%>
+		<p>Image: Abell_2895<br>		<p>RA: 20.1343<br>		<p>DEC: -27.0294<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5370.png" width=95%>
+		<p>Image: MACSJ0417.5-1155<br>		<p>RA: 64.8806<br>		<p>DEC: -11.5777<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5371.png" width=95%>
+		<p>Image: Abell_S1063<br>		<p>RA: 341.9213<br>		<p>DEC: -44.6192<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5372.png" width=95%>
+		<p>Image: J0117.8-5455<br>		<p>RA: 18.4628<br>		<p>DEC: -55.0354<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5373.png" width=95%>
+		<p>Image: J0626.3-5341<br>		<p>RA: 97.2138<br>		<p>DEC: -53.6766<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5374.png" width=95%>
+		<p>Image: J1539.5-8335<br>		<p>RA: 233.4225<br>		<p>DEC: -83.2042<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5375.png" width=95%>
+		<p>Image: RXCJ0510.7-0801<br>		<p>RA: 77.1299<br>		<p>DEC: -7.8333<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5376.png" width=95%>
+		<p>Image: J0820.9-5704<br>		<p>RA: 124.8933<br>		<p>DEC: -57.5761<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5377.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 37.0263<br>		<p>DEC: -41.3841<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5378.png" width=95%>
+		<p>Image: J1358.9-4750<br>		<p>RA: 209.8326<br>		<p>DEC: -47.6103<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5379.png" width=95%>
+		<p>Image: J0342.8-5338<br>		<p>RA: 55.0529<br>		<p>DEC: -54.0603<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5380.png" width=95%>
+		<p>Image: Abell_2813<br>		<p>RA: 10.7424<br>		<p>DEC: -20.6202<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5381.png" width=95%>
+		<p>Image: Abell_545<br>		<p>RA: 83.0972<br>		<p>DEC: -11.9475<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5382.png" width=95%>
+		<p>Image: MACSJ_0025.4-1222B<br>		<p>RA: 6.8887<br>		<p>DEC: -12.8980<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5383.png" width=95%>
+		<p>Image: Abell_33<br>		<p>RA: 6.8048<br>		<p>DEC: -19.3838<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5384.png" width=95%>
+		<p>Image: Abell_4038<br>		<p>RA: 356.6350<br>		<p>DEC: -28.1535<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5385.png" width=95%>
+		<p>Image: Abell_133<br>		<p>RA: 16.0942<br>		<p>DEC: -21.4247<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5386.png" width=95%>
+		<p>Image: PLCK_G200.9-28.2<br>		<p>RA: 72.3189<br>		<p>DEC: -3.0206<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5387.png" width=95%>
+		<p>Image: J0637.3-4828<br>		<p>RA: 99.5343<br>		<p>DEC: -48.4218<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5388.png" width=95%>
+		<p>Image: J0545.5-4756<br>		<p>RA: 86.3392<br>		<p>DEC: -47.6727<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5389.png" width=95%>
+		<p>Image: J1201.0-4623<br>		<p>RA: 179.8516<br>		<p>DEC: -46.8977<br>		<p>Author ML score (if available): 3<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5390.png" width=95%>
+		<p>Image: J1518.3-4632<br>		<p>RA: 229.2678<br>		<p>DEC: -46.1725<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5391.png" width=95%>
+		<p>Image: Abell_S1063<br>		<p>RA: 341.8733<br>		<p>DEC: -44.6895<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5392.png" width=95%>
+		<p>Image: J0342.8-5338<br>		<p>RA: 56.4623<br>		<p>DEC: -53.3881<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5393.png" width=95%>
+		<p>Image: Abell_2667<br>		<p>RA: 358.3178<br>		<p>DEC: -25.6287<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5394.png" width=95%>
+		<p>Image: Abell_370<br>		<p>RA: 39.7980<br>		<p>DEC: -1.8319<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5395.png" width=95%>
+		<p>Image: J0820.9-5704<br>		<p>RA: 125.8745<br>		<p>DEC: -57.3624<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5396.png" width=95%>
+		<p>Image: J0328.6-5542<br>		<p>RA: 52.4193<br>		<p>DEC: -55.5430<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5397.png" width=95%>
+		<p>Image: J0416.7-5525<br>		<p>RA: 63.7972<br>		<p>DEC: -55.7640<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5398.png" width=95%>
+		<p>Image: J0616.8-4748<br>		<p>RA: 94.6556<br>		<p>DEC: -48.0681<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5399.png" width=95%>
+		<p>Image: J0352.4-7401<br>		<p>RA: 57.5577<br>		<p>DEC: -73.9440<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5400.png" width=95%>
+		<p>Image: J0510.2-4519<br>		<p>RA: 77.6066<br>		<p>DEC: -45.4841<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5401.png" width=95%>
+		<p>Image: Abell_3558<br>		<p>RA: 201.9597<br>		<p>DEC: -31.4897<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5402.png" width=95%>
+		<p>Image: J0027.3-5015<br>		<p>RA: 6.2476<br>		<p>DEC: -50.2426<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5403.png" width=95%>
+		<p>Image: J2319.2-6750<br>		<p>RA: 349.2576<br>		<p>DEC: -67.9676<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5404.png" width=95%>
+		<p>Image: J1248.7-4118<br>		<p>RA: 192.1525<br>		<p>DEC: -41.4128<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5405.png" width=95%>
+		<p>Image: J2319.2-6750<br>		<p>RA: 350.3138<br>		<p>DEC: -67.4792<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5406.png" width=95%>
+		<p>Image: Abell_13<br>		<p>RA: 3.9931<br>		<p>DEC: -19.4699<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5407.png" width=95%>
+		<p>Image: Abell_370<br>		<p>RA: 39.8911<br>		<p>DEC: -1.4163<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5408.png" width=95%>
+		<p>Image: Abell_S295<br>		<p>RA: 41.4043<br>		<p>DEC: -53.0460<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5409.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 104.5072<br>		<p>DEC: -55.8887<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5410.png" width=95%>
+		<p>Image: Abell_2597<br>		<p>RA: 351.8077<br>		<p>DEC: -11.6680<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5411.png" width=95%>
+		<p>Image: J1410.4-4246<br>		<p>RA: 211.8467<br>		<p>DEC: -43.1618<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5412.png" width=95%>
+		<p>Image: J0943.4-7619<br>		<p>RA: 147.1416<br>		<p>DEC: -76.5004<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5413.png" width=95%>
+		<p>Image: J0449.9-4440<br>		<p>RA: 72.5972<br>		<p>DEC: -45.2359<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5414.png" width=95%>
+		<p>Image: J0232.2-4420<br>		<p>RA: 37.5794<br>		<p>DEC: -44.0908<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5415.png" width=95%>
+		<p>Image: Abell_133<br>		<p>RA: 15.1667<br>		<p>DEC: -22.1550<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5416.png" width=95%>
+		<p>Image: Abell_33<br>		<p>RA: 6.7941<br>		<p>DEC: -19.0324<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5417.png" width=95%>
+		<p>Image: Abell_133<br>		<p>RA: 15.2660<br>		<p>DEC: -21.5935<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5418.png" width=95%>
+		<p>Image: J1145.6-5420<br>		<p>RA: 176.1617<br>		<p>DEC: -54.5657<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5419.png" width=95%>
+		<p>Image: J0303.7-7752<br>		<p>RA: 43.6014<br>		<p>DEC: -77.6451<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5420.png" width=95%>
+		<p>Image: J0712.0-6030<br>		<p>RA: 108.2876<br>		<p>DEC: -61.0700<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5421.png" width=95%>
+		<p>Image: J0542.8-4100<br>		<p>RA: 85.1132<br>		<p>DEC: -40.9178<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5422.png" width=95%>
+		<p>Image: Abell_2811<br>		<p>RA: 10.3780<br>		<p>DEC: -28.4584<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5423.png" width=95%>
+		<p>Image: J1645.4-7334<br>		<p>RA: 250.4372<br>		<p>DEC: -73.8210<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5424.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 5.0043<br>		<p>DEC: -65.8436<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5425.png" width=95%>
+		<p>Image: J0212.8-4707<br>		<p>RA: 33.1091<br>		<p>DEC: -46.9413<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5426.png" width=95%>
+		<p>Image: J1539.5-8335<br>		<p>RA: 237.6453<br>		<p>DEC: -83.5566<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5427.png" width=95%>
+		<p>Image: J1410.4-4246<br>		<p>RA: 212.6111<br>		<p>DEC: -43.1770<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5428.png" width=95%>
+		<p>Image: J1518.3-4632<br>		<p>RA: 228.9269<br>		<p>DEC: -46.7975<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5429.png" width=95%>
+		<p>Image: J1653.0-5943<br>		<p>RA: 253.7862<br>		<p>DEC: -59.5501<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5430.png" width=95%>
+		<p>Image: J0645.4-5413<br>		<p>RA: 101.0564<br>		<p>DEC: -53.7981<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5431.png" width=95%>
+		<p>Image: J0342.8-5338<br>		<p>RA: 55.3682<br>		<p>DEC: -54.0222<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5432.png" width=95%>
+		<p>Image: ElGordo<br>		<p>RA: 15.1606<br>		<p>DEC: -49.7738<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5433.png" width=95%>
+		<p>Image: J2023.4-5535<br>		<p>RA: 305.6713<br>		<p>DEC: -56.0005<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5434.png" width=95%>
+		<p>Image: J0738.1-7506<br>		<p>RA: 112.5007<br>		<p>DEC: -74.7189<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5435.png" width=95%>
+		<p>Image: Abell_22<br>		<p>RA: 5.1722<br>		<p>DEC: -26.0241<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5436.png" width=95%>
+		<p>Image: J2023.4-5535<br>		<p>RA: 306.2291<br>		<p>DEC: -56.1112<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5437.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.3828<br>		<p>DEC: -41.4783<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5438.png" width=95%>
+		<p>Image: J0336.3-4037<br>		<p>RA: 54.4821<br>		<p>DEC: -40.6276<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5439.png" width=95%>
+		<p>Image: RXCJ2351.0-19<br>		<p>RA: 357.9257<br>		<p>DEC: -19.7393<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5440.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 81.9568<br>		<p>DEC: -39.6637<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5441.png" width=95%>
+		<p>Image: J0406.7-7116<br>		<p>RA: 59.8780<br>		<p>DEC: -70.9466<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5442.png" width=95%>
+		<p>Image: J0637.3-4828<br>		<p>RA: 99.2439<br>		<p>DEC: -48.1610<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5443.png" width=95%>
+		<p>Image: J0145.2-6033<br>		<p>RA: 25.4818<br>		<p>DEC: -60.7099<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5444.png" width=95%>
+		<p>Image: Abell_2485<br>		<p>RA: 342.4043<br>		<p>DEC: -16.0718<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5445.png" width=95%>
+		<p>Image: RXCJ2351.0-19<br>		<p>RA: 357.7127<br>		<p>DEC: -19.8927<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5446.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.1336<br>		<p>DEC: -41.8270<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5447.png" width=95%>
+		<p>Image: J2222.2-5235<br>		<p>RA: 334.6527<br>		<p>DEC: -52.4924<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5448.png" width=95%>
+		<p>Image: Abell_2813<br>		<p>RA: 11.1728<br>		<p>DEC: -20.2137<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5449.png" width=95%>
+		<p>Image: J0117.8-5455<br>		<p>RA: 19.2511<br>		<p>DEC: -55.1349<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5450.png" width=95%>
+		<p>Image: Abell_2667<br>		<p>RA: 358.4210<br>		<p>DEC: -26.0613<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5451.png" width=95%>
+		<p>Image: J0351.1-8212<br>		<p>RA: 57.1929<br>		<p>DEC: -82.0215<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5452.png" width=95%>
+		<p>Image: J1040.7-7047<br>		<p>RA: 160.1312<br>		<p>DEC: -70.8025<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5453.png" width=95%>
+		<p>Image: J0528.9-3927_B<br>		<p>RA: 82.6606<br>		<p>DEC: -39.2845<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5454.png" width=95%>
+		<p>Image: J0027.3-5015<br>		<p>RA: 6.8976<br>		<p>DEC: -50.2783<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5455.png" width=95%>
+		<p>Image: J0820.9-5704<br>		<p>RA: 126.1495<br>		<p>DEC: -57.1112<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5456.png" width=95%>
+		<p>Image: J0943.4-7619<br>		<p>RA: 148.2381<br>		<p>DEC: -76.3409<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5457.png" width=95%>
+		<p>Image: Abell_2744<br>		<p>RA: 3.1691<br>		<p>DEC: -30.6835<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5458.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 103.6427<br>		<p>DEC: -56.5036<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5459.png" width=95%>
+		<p>Image: Abell_2485<br>		<p>RA: 341.8372<br>		<p>DEC: -15.7344<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5460.png" width=95%>
+		<p>Image: Abell_521<br>		<p>RA: 73.7468<br>		<p>DEC: -10.6074<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5461.png" width=95%>
+		<p>Image: J1130.0-4213<br>		<p>RA: 171.8530<br>		<p>DEC: -42.5427<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5462.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 105.0967<br>		<p>DEC: -55.5829<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5463.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.1162<br>		<p>DEC: -41.6287<br>		<p>Author ML score (if available): 3<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5464.png" width=95%>
+		<p>Image: J0658.5-5556<br>		<p>RA: 105.4658<br>		<p>DEC: -55.8610<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5465.png" width=95%>
+		<p>Image: J0225.9-4154<br>		<p>RA: 36.6571<br>		<p>DEC: -42.4313<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5466.png" width=95%>
+		<p>Image: J0117.8-5455<br>		<p>RA: 18.7478<br>		<p>DEC: -55.1593<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5467.png" width=95%>
+		<p>Image: PLCK_G200.9-28.2<br>		<p>RA: 72.2132<br>		<p>DEC: -2.9803<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5468.png" width=95%>
+		<p>Image: J0616.8-4748<br>		<p>RA: 94.2531<br>		<p>DEC: -47.9244<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5469.png" width=95%>
+		<p>Image: Abell_S295<br>		<p>RA: 41.4410<br>		<p>DEC: -52.8670<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5470.png" width=95%>
+		<p>Image: Abell_2811<br>		<p>RA: 11.0021<br>		<p>DEC: -28.2099<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5471.png" width=95%>
+		<p>Image: J0328.6-5542<br>		<p>RA: 51.5574<br>		<p>DEC: -55.2874<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5472.png" width=95%>
+		<p>Image: J0212.8-4707<br>		<p>RA: 33.9663<br>		<p>DEC: -46.9304<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5473.png" width=95%>
+		<p>Image: MACS_J0257.6-2209<br>		<p>RA: 44.6690<br>		<p>DEC: -21.6017<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5474.png" width=95%>
+		<p>Image: Abell_33<br>		<p>RA: 6.6048<br>		<p>DEC: -19.7093<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5475.png" width=95%>
+		<p>Image: RXCJ0510.7-0801<br>		<p>RA: 78.1988<br>		<p>DEC: -7.6138<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5476.png" width=95%>
+		<p>Image: Abell_133<br>		<p>RA: 16.1081<br>		<p>DEC: -22.1973<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5477.png" width=95%>
+		<p>Image: J1539.5-8335<br>		<p>RA: 239.6421<br>		<p>DEC: -83.6224<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5478.png" width=95%>
+		<p>Image: J0342.8-5338<br>		<p>RA: 55.4530<br>		<p>DEC: -53.0388<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5479.png" width=95%>
+		<p>Image: J0631.3-5610<br>		<p>RA: 97.9367<br>		<p>DEC: -56.1341<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5480.png" width=95%>
+		<p>Image: J0943.4-7619<br>		<p>RA: 145.8639<br>		<p>DEC: -76.3461<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5481.png" width=95%>
+		<p>Image: Abell_85<br>		<p>RA: 10.0323<br>		<p>DEC: -8.9671<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5482.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 3.2651<br>		<p>DEC: -66.4555<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5483.png" width=95%>
+		<p>Image: J0406.7-7116<br>		<p>RA: 62.5424<br>		<p>DEC: -71.1793<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5484.png" width=95%>
+		<p>Image: Abell_548<br>		<p>RA: 87.2542<br>		<p>DEC: -25.8024<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5485.png" width=95%>
+		<p>Image: J0738.1-7506<br>		<p>RA: 112.4731<br>		<p>DEC: -74.8061<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5486.png" width=95%>
+		<p>Image: Abell_370<br>		<p>RA: 40.2130<br>		<p>DEC: -1.6438<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5487.png" width=95%>
+		<p>Image: J1130.0-4213<br>		<p>RA: 172.4563<br>		<p>DEC: -42.5452<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5488.png" width=95%>
+		<p>Image: J2340.1-8510<br>		<p>RA: 0.8920<br>		<p>DEC: -84.6531<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5489.png" width=95%>
+		<p>Image: J1601.7-7544<br>		<p>RA: 242.7526<br>		<p>DEC: -75.5193<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5490.png" width=95%>
+		<p>Image: Abell_2645<br>		<p>RA: 355.5283<br>		<p>DEC: -9.3969<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5491.png" width=95%>
+		<p>Image: J0449.9-4440<br>		<p>RA: 72.9618<br>		<p>DEC: -44.7931<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5492.png" width=95%>
+		<p>Image: Abell_2895<br>		<p>RA: 19.9563<br>		<p>DEC: -26.5851<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5493.png" width=95%>
+		<p>Image: J0540.1-4050<br>		<p>RA: 84.5211<br>		<p>DEC: -41.1518<br>		<p>Author ML score (if available): 2<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5494.png" width=95%>
+		<p>Image: Abell_2744<br>		<p>RA: 3.3631<br>		<p>DEC: -29.9548<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="column">
+		<img src="../images/5495.png" width=95%>
+		<p>Image: J0014.3-6604<br>		<p>RA: 2.9599<br>		<p>DEC: -65.6708<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5496.png" width=95%>
+		<p>Image: J1240.2-4825<br>		<p>RA: 189.8684<br>		<p>DEC: -48.6464<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5497.png" width=95%>
+		<p>Image: J0216.3-4816<br>		<p>RA: 33.2321<br>		<p>DEC: -47.7329<br>		<p>Author ML score (if available): 1<br></p>		<p>In evaluation subset: True<br></p>	</div>
+	<div class="column">
+		<img src="../images/5498.png" width=95%>
+		<p>Image: J1248.7-4118<br>		<p>RA: 191.9028<br>		<p>DEC: -41.2187<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+	<div class="column">
+		<img src="../images/5499.png" width=95%>
+		<p>Image: J0610.5-4848<br>		<p>RA: 92.1143<br>		<p>DEC: -48.5387<br>		<p>Author ML score (if available): -1<br></p>		<p>In evaluation subset: False<br></p>	</div>
+</div>
+</body>
