@@ -1,6 +1,6 @@
 ## protege_catalogue.csv
 
-This contains the full catalogue of extended sources (i.e. pyBDSF islands with more than three Gaussian components) with Astronomaly: Protege's score and ranking, as well as the scores from author ML. **N.B.** This catalogue should NOT be considered a ground-truth catalogue of anomalous sources as the scoring is completely subjective and assigned by author ML alone, which was used to train Protege and hence produce the final score and ranking. This catalogue should be used as recommendations for interesting sources that may be valuable to follow up.
+This contains the full catalogue of extended sources (i.e. pyBDSF islands with more than three Gaussian components) with Astronomaly: Protege's score and ranking, as well as the scores from author ML. **N.B.** This catalogue should NOT be considered a ground-truth catalogue of anomalous sources as the scoring is completely subjective and assigned by author ML alone, which was used to train Protege and hence produce the final score and ranking. This catalogue should be used as recommendations for interesting sources that may be valuable to follow up. Images of the 6161 cutouts of each source can be found in the attached `images_part1.zip` and `images_part2.zip` files, where the file names correspond to the Protege rank. 
 
 **Columns**
 
