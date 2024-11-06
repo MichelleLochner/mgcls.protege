@@ -12,5 +12,5 @@ This contains the full catalogue of extended sources (i.e. pyBDSF islands with m
 - `peak_flux` - peak flux of the source in Jy/beam
 - `x` & `y` - position of the centre of the source in pixels
 - `original_image` - the name of the fits file the source can be found in
-- `obj_size_pixels` - the edge of the smallest bounding box that contains the source
+- `obj_size_pixels` - the edge of the smallest bounding box that contains the source. Square cutouts are extracted from the original fits files and then resized to 128x128 pixels.
 - `evaluation_subset_author_ML_score` - the score from author ML from the evaluation subset (where all sources in the subset had a human score). -1 if the source was never scored by a human.
