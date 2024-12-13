@@ -1,4 +1,5 @@
 ## Astronomaly: Protege applied to MGCLS
+[![DOI](https://zenodo.org/badge/883601077.svg)](https://doi.org/10.5281/zenodo.14440674)
 
 Repository to host a small website to show the unusual objects discovered by Astronomaly: Protege in the MGCLS data. Viewable at https://michellelochner.github.io/mgcls.protege/.
 
